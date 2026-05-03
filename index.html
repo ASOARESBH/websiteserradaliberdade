@@ -29,14 +29,27 @@
                     <li class="nav-item">
                         <a href="#sobre" class="nav-link">Sobre</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#acesso" class="nav-link">Acesso</a>
+                    <li class="nav-item dropdown">
+                        <a href="#acesso" class="nav-link">Acesso <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://serradaliberdade.tomticket.com/" target="_blank">Abrir Chamado</a></li>
+                            <li><a href="https://asl.erpcondominios.com.br/frontend/login.html" target="_blank">Portal do Condomínio</a></li>
+                            <li><a href="https://asl.erpcondominios.com.br/frontend/login_fornecedor.html" target="_blank">Portal do Fornecedor</a></li>
+                            <li><a href="#contato">Sugestões e Reclamações</a></li>
+                            <li><hr></li>
+                            <li><a href="#acesso">Ver todos no site</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="#noticias" class="nav-link">Notícias</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#diretoria" class="nav-link">Diretoria</a>
+                    <li class="nav-item dropdown">
+                        <a href="#diretoria" class="nav-link">Diretoria <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#diretoria">Membros</a></li>
+                            <li><a href="javascript:void(0)" onclick="openDownloadModal('Estatuto')">Estatuto</a></li>
+                            <li><a href="javascript:void(0)" onclick="openDownloadModal('Regimento Interno')">Regimento Interno</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="#contato" class="nav-link">Contato</a>
@@ -217,33 +230,7 @@
                 <p class="section-subtitle">Fique por dentro das novidades</p>
             </div>
             <div class="noticias-grid" id="noticias-grid">
-                <div class="noticia-card">
-                    <img src="images/img5.jpg" alt="Notícia 1" class="noticia-img">
-                    <div class="noticia-content">
-                        <span class="noticia-date">10 de Setembro, 2025</span>
-                        <h3 class="noticia-title">Nova Infraestrutura em Desenvolvimento</h3>
-                        <p class="noticia-excerpt">Obras de melhorias na rede elétrica e sistema de segurança estão em andamento...</p>
-                        <a href="#" class="noticia-link">Leia mais</a>
-                    </div>
-                </div>
-                <div class="noticia-card">
-                    <img src="images/img6.jpg" alt="Notícia 2" class="noticia-img">
-                    <div class="noticia-content">
-                        <span class="noticia-date">5 de Setembro, 2025</span>
-                        <h3 class="noticia-title">Assembleia Geral Ordinária</h3>
-                        <p class="noticia-excerpt">Convocação para assembleia geral que acontecerá no próximo mês...</p>
-                        <a href="#" class="noticia-link">Leia mais</a>
-                    </div>
-                </div>
-                <div class="noticia-card">
-                    <img src="images/tema2.jpg" alt="Notícia 3" class="noticia-img">
-                    <div class="noticia-content">
-                        <span class="noticia-date">1 de Setembro, 2025</span>
-                        <h3 class="noticia-title">Melhorias na Portaria</h3>
-                        <p class="noticia-excerpt">Sistema de monitoramento foi atualizado com novas câmeras de segurança...</p>
-                        <a href="#" class="noticia-link">Leia mais</a>
-                    </div>
-                </div>
+                <!-- Notícias serão carregadas via JS -->
             </div>
         </div>
     </section>
@@ -252,76 +239,69 @@
     <section id="diretoria" class="diretoria">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Diretoria Atual 2025-2027</h2>
-                <p class="section-subtitle">Conheça nossa equipe de gestão</p>
+                <h2 class="section-title">Nossa Diretoria</h2>
+                <p class="section-subtitle">Gestão comprometida com o bem-estar de todos</p>
             </div>
             <div class="diretoria-grid">
                 <div class="diretor-card">
-                    <div class="diretor-avatar">
-                        <i class="fas fa-user"></i>
+                    <div class="diretor-img">
+                        <img src="images/AthRGrN9SgsR.webp" alt="Diretor">
                     </div>
-                    <h3 class="diretor-nome">André Soares</h3>
-                    <p class="diretor-cargo">Presidente</p>
-                    <p class="diretor-desc">Responsável pela gestão geral da associação e representação legal.</p>
+                    <div class="diretor-info">
+                        <h3>Nome do Diretor</h3>
+                        <p class="cargo">Presidente</p>
+                    </div>
                 </div>
                 <div class="diretor-card">
-                    <div class="diretor-avatar">
-                        <i class="fas fa-user"></i>
+                    <div class="diretor-img">
+                        <img src="images/INgDAEJQVJhc.webp" alt="Diretor">
                     </div>
-                    <h3 class="diretor-nome">Silvérado</h3>
-                    <p class="diretor-cargo">Vice-Presidente</p>
-                    <p class="diretor-desc">Auxilia o presidente nas responsabilidades administrativas.</p>
+                    <div class="diretor-info">
+                        <h3>Nome do Diretor</h3>
+                        <p class="cargo">Vice-Presidente</p>
+                    </div>
                 </div>
                 <div class="diretor-card">
-                    <div class="diretor-avatar">
-                        <i class="fas fa-user"></i>
+                    <div class="diretor-img">
+                        <img src="images/VZsWiT2zBHai.jpg" alt="Diretor">
                     </div>
-                    <h3 class="diretor-nome">Geraldino</h3>
-                    <p class="diretor-cargo">Tesoureiro</p>
-                    <p class="diretor-desc">Gerencia as finanças e recursos da associação.</p>
+                    <div class="diretor-info">
+                        <h3>Nome do Diretor</h3>
+                        <p class="cargo">Tesoureiro</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
     <!-- Contato Section -->
     <section id="contato" class="contato">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Entre em Contato</h2>
-                <p class="section-subtitle">Estamos sempre prontos para ajudar</p>
+                <h2 class="section-title">Fale Conosco</h2>
+                <p class="section-subtitle">Estamos à disposição para ajudar</p>
             </div>
             <div class="contato-content">
                 <div class="contato-info">
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Localização</h4>
-                            <p>Serra do Cipó, Jaboticatubas - MG</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Telefone</h4>
-                            <p><a href="tel:+5531922288170">(31) 92228-8170</a></p>
+                            <p>(31) 92228-8170</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:serradaliberdade@outlook.com">serradaliberdade@outlook.com</a></p>
-                            <p><a href="mailto:diretoria@asserradaliberdade.ong.br">diretoria@asserradaliberdade.ong.br</a></p>
+                            <h4>E-mail</h4>
+                            <p>contato@serradaliberdade.com.br</p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Redes Sociais</h4>
-                            <p><a href="https://instagram.com/associacao_serradaliberdade" target="_blank">@associacao_serradaliberdade</a></p>
+                            <h4>Atendimento</h4>
+                            <p>Segunda a Sexta: 08h às 18h</p>
                         </div>
                     </div>
                 </div>
@@ -330,13 +310,13 @@
                         <input type="text" name="nome" placeholder="Seu Nome" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Seu Email" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" name="telefone" placeholder="Seu Telefone">
+                        <input type="tel" name="telefone" placeholder="Seu Telefone" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
@@ -346,54 +326,63 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Associação Serra da Liberdade</h4>
-                <p>Um lugar que traduz o conceito de qualidade de vida, lazer e bem-estar no coração da Serra do Cipó.</p>
-                <div class="social-links">
-                    <a href="https://wa.me/5531922288170" title="WhatsApp" class="social-link">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://instagram.com/associacao_serradaliberdade" target="_blank" title="Instagram" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="mailto:serradaliberdade@outlook.com" title="Email" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Serra da Liberdade">
+                    <p>Associação Serra da Liberdade - Qualidade de vida e natureza.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#acesso">Acesso</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-section">
-                <h4>Links Rápidos</h4>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#acesso">Acesso</a></li>
-                    <li><a href="#noticias">Notícias</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Associação Serra da Liberdade. Todos os direitos reservados.</p>
             </div>
-            <div class="footer-section">
-                <h4>Acesso Rápido</h4>
-                <ul>
-                    <li><a href="https://serradaliberdade.tomticket.com/" target="_blank">Abrir Chamado</a></li>
-                    <li><a href="https://asl.erpcondominios.com.br/frontend/login.html" target="_blank">Portal ERP</a></li>
-                    <li><a href="#sugestoes">Sugestões</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Administração</h4>
-                <p>Este condomínio é administrado por:</p>
-                <a href="https://brcondos.com.br/" target="_blank" class="brcondos-link">
-                    <strong>BR CONDOS</strong>
-                    <span>Gestão Profissional de Condomínios</span>
+        </div>
+    </footer>
+
+    <!-- Modal de Download -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeDownloadModal()">&times;</span>
+            <h2 id="modalTitle">Baixar Documento</h2>
+            <p>Informe seus dados para baixar o <span id="docName"></span> da associação.</p>
+            <form id="downloadForm">
+                <input type="hidden" id="documentType" name="documentType">
+                <div class="form-group">
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="gleba" placeholder="Gleba/Lote" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Solicitar Download</button>
+            </form>
+            <div id="downloadLinkContainer" style="display: none; margin-top: 20px; text-align: center;">
+                <p>Obrigado! Clique no botão abaixo para baixar:</p>
+                <a id="finalDownloadLink" href="#" class="btn btn-success" download>
+                    <i class="fas fa-download"></i> Baixar Agora
                 </a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Associação Serra da Liberdade. Todos os direitos reservados.</p>
-            <p>Desenvolvido com <i class="fas fa-heart"></i> para a comunidade</p>
-        </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

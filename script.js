@@ -521,3 +521,94 @@ document.addEventListener('DOMContentLoaded', () => {
 // FIM DO SCRIPT
 // ========================================
 Logger.success('Script principal carregado completamente');
+
+// ========================================
+// 9. MODAL DE DOWNLOAD E SUBMENUS
+// ========================================
+
+function openDownloadModal(type) {
+    const modal = document.getElementById('downloadModal');
+    const docName = document.getElementById('docName');
+    const documentTypeInput = document.getElementById('documentType');
+    const downloadLinkContainer = document.getElementById('downloadLinkContainer');
+    const downloadForm = document.getElementById('downloadForm');
+    
+    docName.textContent = type;
+    documentTypeInput.value = type;
+    
+    // Resetar estado do modal
+    downloadLinkContainer.style.display = 'none';
+    downloadForm.style.display = 'block';
+    downloadForm.reset();
+    
+    modal.style.display = 'flex';
+    Logger.log('Modal de download aberto', { type });
+}
+
+function closeDownloadModal() {
+    const modal = document.getElementById('downloadModal');
+    modal.style.display = 'none';
+}
+
+// Fechar modal ao clicar fora
+window.onclick = function(event) {
+    const modal = document.getElementById('downloadModal');
+    if (event.target == modal) {
+        closeDownloadModal();
+    }
+}
+
+// Lógica do formulário de download
+const downloadForm = document.getElementById('downloadForm');
+if (downloadForm) {
+    downloadForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const data = {
+            nome: formData.get('nome'),
+            gleba: formData.get('gleba'),
+            email: formData.get('email'),
+            documento: formData.get('documentType')
+        };
+        
+        Logger.log('Solicitação de download recebida', data);
+        
+        // Simular processamento
+        const submitBtn = this.querySelector('button');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Processando...';
+        
+        setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+            
+            // Esconder formulário e mostrar link
+            downloadForm.style.display = 'none';
+            const linkContainer = document.getElementById('downloadLinkContainer');
+            const finalLink = document.getElementById('finalDownloadLink');
+            
+            // Definir o arquivo baseado no tipo (exemplo)
+            const fileName = data.documento === 'Estatuto' ? 'estatuto_associacao.pdf' : 'regimento_interno.pdf';
+            finalLink.href = 'documents/' + fileName;
+            finalLink.innerHTML = `<i class="fas fa-download"></i> Baixar ${data.documento}`;
+            
+            linkContainer.style.display = 'block';
+            Logger.success('Link de download gerado para ' + data.documento);
+        }, 1000);
+    });
+}
+
+// Ajuste para menu mobile com dropdown
+const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+dropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('.nav-link');
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+            Logger.log('Dropdown mobile toggled');
+        }
+    });
+});
