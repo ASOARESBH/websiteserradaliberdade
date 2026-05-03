@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "titulo": "Nova Infraestrutura em Desenvolvimento",
+        "resumo": "Obras de melhorias na rede el\u00e9trica e sistema de seguran\u00e7a est\u00e3o em andamento para proporcionar ainda mais comodidade aos moradores.",
+        "conteudo": "A Associa\u00e7\u00e3o Serra da Liberdade est\u00e1 investindo em melhorias significativas na infraestrutura do empreendimento. As obras incluem moderniza\u00e7\u00e3o da rede el\u00e9trica, instala\u00e7\u00e3o de novos pontos de ilumina\u00e7\u00e3o e upgrade no sistema de monitoramento de seguran\u00e7a.",
+        "data": "2025-09-10",
+        "imagem": "images\/jrRzIg1IyjR5.jpg",
+        "autor": "Diretoria"
+    },
+    {
+        "id": 2,
+        "titulo": "Assembleia Geral Ordin\u00e1ria",
+        "resumo": "Convoca\u00e7\u00e3o para assembleia geral que acontecer\u00e1 no pr\u00f3ximo m\u00eas para discuss\u00e3o de assuntos importantes da associa\u00e7\u00e3o.",
+        "conteudo": "Todos os associados est\u00e3o convocados para a Assembleia Geral Ordin\u00e1ria que ser\u00e1 realizada no pr\u00f3ximo m\u00eas. Na pauta: presta\u00e7\u00e3o de contas, novos projetos e elei\u00e7\u00e3o de novos membros do conselho.",
+        "data": "2025-09-05",
+        "imagem": "images\/eGOZ9oIeAc5V.jpg",
+        "autor": "Presidente"
+    },
+    {
+        "id": 3,
+        "titulo": "Melhorias na Portaria",
+        "resumo": "Sistema de monitoramento foi atualizado com novas c\u00e2meras de seguran\u00e7a e controle de acesso modernizado.",
+        "conteudo": "A portaria do empreendimento recebeu importantes melhorias no sistema de seguran\u00e7a. Foram instaladas novas c\u00e2meras de alta defini\u00e7\u00e3o e um sistema de controle de acesso mais moderno e eficiente.",
+        "data": "2025-09-01",
+        "imagem": "images\/XR0hz72Y11ae.jpg",
+        "autor": "Administra\u00e7\u00e3o"
+    }
+]

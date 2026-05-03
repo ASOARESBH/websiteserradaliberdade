@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação Serra da Liberdade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5531922288170?text=Olá!%20Gostaria%20de%20saber%20mais%20informações%20sobre%20a%20Associação%20Serra%20da%20Liberdade." target="_blank" class="whatsapp-btn" title="Fale conosco via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo.png" alt="Serra da Liberdade" class="logo">
+                    <span class="logo-text">Serra da Liberdade</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#acesso" class="nav-link">Acesso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#noticias" class="nav-link">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#diretoria" class="nav-link">Diretoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Viva na Tranquilidade na Serra da Liberdade</h1>
+            <p class="hero-subtitle">Um lugar que traduz o conceito de qualidade de vida, lazer e bem-estar no coração da Serra do Cipó</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+                <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-video">
+                <video autoplay muted loop>
+                    <source src="hero-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-alert">
+                <div class="alert-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="alert-content">
+                    <h3>⚠️ ALERTA</h3>
+                    <p>Não adquira fração de terra</p>
+                    <p>Fale com a Associação</p>
+                    <a href="https://wa.me/5531922288170" class="alert-phone">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="pulse-number">(31) 92228-8170</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre o Empreendimento</h2>
+                <p class="section-subtitle">Conheça a Serra da Liberdade</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h3>Um Refúgio na Serra do Cipó</h3>
+                    <p>O empreendimento Serra da Liberdade está localizado no coração da Serra do Cipó e oferece um estilo de vida em contato com a natureza. São áreas de 20.000 m² cada, situadas na melhor localização da região.</p>
+                    
+                    <h4>Infraestrutura Completa</h4>
+                    <ul class="features-list">
+                        <li><i class="fas fa-water"></i> Rede de distribuição de água potável</li>
+                        <li><i class="fas fa-bolt"></i> Rede de energia elétrica</li>
+                        <li><i class="fas fa-road"></i> Vias abertas e cascalhadas</li>
+                        <li><i class="fas fa-shield-alt"></i> Portaria 24 horas com monitoramento</li>
+                        <li><i class="fas fa-horse"></i> Ideal para criação de haras</li>
+                        <li><i class="fas fa-fish"></i> Excelente para pesca</li>
+                    </ul>
+                    
+                    <p>Localizado ao lado da escola de paraquedismo da Serra do Cipó, o empreendimento une segurança, natureza exuberante, tranquilidade e bem-estar.</p>
+                </div>
+                <div class="sobre-images">
+                <div class="image-gallery">
+                    <img src="images/tema1.jpg" alt="Vista do empreendimento" class="gallery-img">
+                    <img src="images/tema2.jpg" alt="Infraestrutura" class="gallery-img">
+                    <img src="images/tema3.jpg" alt="Serra do Cipó" class="gallery-img">
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização Section -->
+    <section id="localizacao" class="localizacao">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Chegar</h2>
+                <p class="section-subtitle">Localização privilegiada na Serra do Cipó</p>
+            </div>
+            <div class="localizacao-content">
+                <div class="mapa-container">
+                    <div id="mapa" class="mapa">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.8!2d-43.6!3d-19.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE4JzAwLjAiUyA0M8KwMzYnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="localizacao-info">
+                    <h3>Endereço</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Serra do Cipó, Jaboticatubas - MG</p>
+                    <p><i class="fas fa-plane"></i> Ao lado do Aeródromo da Serra do Cipó</p>
+                    
+                    <div class="nav-buttons">
+                        <a href="https://maps.google.com/?q=Serra+do+Cipó+Jaboticatubas+MG" target="_blank" class="btn btn-maps">
+                            <i class="fab fa-google"></i> Google Maps
+                        </a>
+                        <a href="https://waze.com/ul?q=Serra+do+Cipó+Jaboticatubas+MG" target="_blank" class="btn btn-waze">
+                            <i class="fas fa-route"></i> Waze
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acesso Section - Nova Aba -->
+    <section id="acesso" class="acesso">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Acesso para Moradores</h2>
+                <p class="section-subtitle">Portais e sistemas exclusivos para os moradores</p>
+            </div>
+            <div class="acesso-grid">
+                <div class="acesso-card">
+                    <div class="acesso-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Abrir Chamado</h3>
+                    <p>Sistema de abertura de chamados para manutenção e serviços do condomínio.</p>
+                    <a href="https://serradaliberdade.tomticket.com/" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Acessar TomTicket
+                    </a>
+                </div>
+                <div class="acesso-card">
+                    <div class="acesso-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Portal do Condomínio</h3>
+                    <p>Acesso ao aplicativo e portal da administração do condomínio.</p>
+                    <a href="https://asl.erpcondominios.com.br/frontend/login.html" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Acessar ERP
+                    </a>
+                </div>
+                <div class="acesso-card">
+                    <div class="acesso-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Portal do Fornecedor</h3>
+                    <p>Acesso exclusivo para fornecedores e prestadores de serviço.</p>
+                    <a href="https://asl.erpcondominios.com.br/frontend/login_fornecedor.html" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Acessar Portal
+                    </a>
+                </div>
+                <div class="acesso-card">
+                    <div class="acesso-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Sugestões e Reclamações</h3>
+                    <p>Envie suas sugestões e reclamações para melhorar o condomínio.</p>
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias Section -->
+    <section id="noticias" class="noticias">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Últimas Notícias</h2>
+                <p class="section-subtitle">Fique por dentro das novidades</p>
+            </div>
+            <div class="noticias-grid" id="noticias-grid">
+                <div class="noticia-card">
+                    <img src="images/img5.jpg" alt="Notícia 1" class="noticia-img">
+                    <div class="noticia-content">
+                        <span class="noticia-date">10 de Setembro, 2025</span>
+                        <h3 class="noticia-title">Nova Infraestrutura em Desenvolvimento</h3>
+                        <p class="noticia-excerpt">Obras de melhorias na rede elétrica e sistema de segurança estão em andamento...</p>
+                        <a href="#" class="noticia-link">Leia mais</a>
+                    </div>
+                </div>
+                <div class="noticia-card">
+                    <img src="images/img6.jpg" alt="Notícia 2" class="noticia-img">
+                    <div class="noticia-content">
+                        <span class="noticia-date">5 de Setembro, 2025</span>
+                        <h3 class="noticia-title">Assembleia Geral Ordinária</h3>
+                        <p class="noticia-excerpt">Convocação para assembleia geral que acontecerá no próximo mês...</p>
+                        <a href="#" class="noticia-link">Leia mais</a>
+                    </div>
+                </div>
+                <div class="noticia-card">
+                    <img src="images/tema2.jpg" alt="Notícia 3" class="noticia-img">
+                    <div class="noticia-content">
+                        <span class="noticia-date">1 de Setembro, 2025</span>
+                        <h3 class="noticia-title">Melhorias na Portaria</h3>
+                        <p class="noticia-excerpt">Sistema de monitoramento foi atualizado com novas câmeras de segurança...</p>
+                        <a href="#" class="noticia-link">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diretoria Section -->
+    <section id="diretoria" class="diretoria">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Diretoria Atual 2025-2027</h2>
+                <p class="section-subtitle">Conheça nossa equipe de gestão</p>
+            </div>
+            <div class="diretoria-grid">
+                <div class="diretor-card">
+                    <div class="diretor-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="diretor-nome">André Soares</h3>
+                    <p class="diretor-cargo">Presidente</p>
+                    <p class="diretor-desc">Responsável pela gestão geral da associação e representação legal.</p>
+                </div>
+                <div class="diretor-card">
+                    <div class="diretor-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="diretor-nome">Silvérado</h3>
+                    <p class="diretor-cargo">Vice-Presidente</p>
+                    <p class="diretor-desc">Auxilia o presidente nas responsabilidades administrativas.</p>
+                </div>
+                <div class="diretor-card">
+                    <div class="diretor-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="diretor-nome">Geraldino</h3>
+                    <p class="diretor-cargo">Tesoureiro</p>
+                    <p class="diretor-desc">Gerencia as finanças e recursos da associação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos sempre prontos para ajudar</p>
+            </div>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Serra do Cipó, Jaboticatubas - MG</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p><a href="tel:+5531922288170">(31) 92228-8170</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:serradaliberdade@outlook.com">serradaliberdade@outlook.com</a></p>
+                            <p><a href="mailto:diretoria@asserradaliberdade.ong.br">diretoria@asserradaliberdade.ong.br</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Redes Sociais</h4>
+                            <p><a href="https://instagram.com/associacao_serradaliberdade" target="_blank">@associacao_serradaliberdade</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefone" placeholder="Seu Telefone">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Associação Serra da Liberdade</h4>
+                <p>Um lugar que traduz o conceito de qualidade de vida, lazer e bem-estar no coração da Serra do Cipó.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/5531922288170" title="WhatsApp" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/associacao_serradaliberdade" target="_blank" title="Instagram" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:serradaliberdade@outlook.com" title="Email" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#acesso">Acesso</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Acesso Rápido</h4>
+                <ul>
+                    <li><a href="https://serradaliberdade.tomticket.com/" target="_blank">Abrir Chamado</a></li>
+                    <li><a href="https://asl.erpcondominios.com.br/frontend/login.html" target="_blank">Portal ERP</a></li>
+                    <li><a href="#sugestoes">Sugestões</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Administração</h4>
+                <p>Este condomínio é administrado por:</p>
+                <a href="https://brcondos.com.br/" target="_blank" class="brcondos-link">
+                    <strong>BR CONDOS</strong>
+                    <span>Gestão Profissional de Condomínios</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Associação Serra da Liberdade. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> para a comunidade</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
