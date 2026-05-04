@@ -1417,3 +1417,11 @@ section {
 .noticia-excerpt {
     flex-grow: 1;
 }
+
+/* Ajuste de tamanho da logo no rodapé */
+.footer-logo img {
+    max-width: 150px; /* Tamanho proporcional */
+    height: auto;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1); /* Opcional: torna a logo branca para melhor contraste no fundo azul */
+}
