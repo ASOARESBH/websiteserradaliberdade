@@ -1380,3 +1380,40 @@ section {
         align-items: center;
     }
 }
+
+/* ========================================
+   AJUSTES DE NOTÍCIAS
+   ======================================== */
+.noticia-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.noticia-date i {
+    color: var(--primary-blue);
+}
+
+.btn-sm {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+}
+
+.noticia-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.noticia-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia-excerpt {
+    flex-grow: 1;
+}
